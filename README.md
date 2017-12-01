@@ -34,7 +34,7 @@ Link: [Google Maps Distance Matrix API](https://developers.google.com/maps/docum
 
 ## Resultate
 ### Erreichbarkeit von Poststellen und Postagenturen
-Die grafische Aufbereitung und Auswertung der Daten lässt vermuten, dass die Post heute ihre bundesrätlichen Erreichbarkeitsvorgaben weitgehend erfüllt. So erreichen gut 90 Prozent der ständigen Wohnbevölkerung zu Fuss oder mit öffentlichen Verkehrsmitteln eine Poststelle oder Postagentur in mindestens ca. **20 Minuten**. Rund die Hälfte der Schweizer Haushalte tut dies **in weniger als elf Minuten**. 
+Die grafische Aufbereitung und Auswertung der Daten lässt vermuten, dass die Post heute ihre bundesrätlichen Erreichbarkeitsvorgaben weitgehend erfüllt. So erreichen gut 90 Prozent der ständigen Wohnbevölkerung zu Fuss oder mit öffentlichen Verkehrsmitteln eine Poststelle oder Postagentur in mindestens **20 Minuten**. Rund die Hälfte der Schweizer Haushalte tut dies **in weniger als elf Minuten**. 
 
 <p align="center">
 <img src="https://github.com/gfzb/DiePost/blob/master/img/3_poststellen.png" width="600px" >
