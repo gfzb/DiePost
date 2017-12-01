@@ -33,3 +33,29 @@ Link: [Google Maps Distance Matrix API](https://developers.google.com/maps/docum
 >Für jede Adresse wird nun mit Hilfe der Distance Matrix API von Google Maps eruiert, wie lange man zu Fuss und mit dem öffentlichen Verkehr zu den fünf nächstgelegenen Postangeboten unterwegs ist. Für weitere Analysen werden zudem die Fahrzeiten mit Velo und Auto abgefragt. Die Reisezeiten wurden für Dienstag, den 05. Dezember 2018, um 9:30 Uhr 'simuliert'. Es werden die Standardeinstellungen der API verwendet.
 
 ## Resultate
+### Erreichbarkeit von Poststellen und Postagenturen
+Die grafische Aufbereitung und Auswertung der Daten lässt vermuten, dass die Post heute ihre bundesrätlichen Erreichbarkeitsvorgaben weitgehend erfüllt. So erreichen gut 90 Prozent der ständigen Wohnbevölkerung zu Fuss oder mit öffentlichen Verkehrsmitteln eine Poststelle oder Postagentur in mindestens ca. **20 Minuten**. Rund die Hälfte der Schweizer Haushalte tut dies **in weniger als elf Minuten**. 
+
+<p align="center">
+<img src="https://github.com/gfzb/DiePost/blob/master/img/3_poststellen.png" width="600px" >
+</p>
+
+### Erreichbarkeit des Hausservice
+Ähnlich verhält es sich bei der Erreichbarkeit des Hausservice. Unsere Zahlen deuten daraufhin, dass 90 Prozent aller Haushalte, die näher an einem Hausservice als einer Poststelle bzw. Postagentur wohnen, diesen in **unter 28 Minuten** erreichen.
+
+<p align="center">
+<img src="https://github.com/gfzb/DiePost/blob/master/img/4_hausservice.png" width="600px" >
+</p>
+
+### Allgemeine Erreichbarkeit
+Daraus ergibt sich folgendes Gesamtbild: **Eine Mehrheit der Schweizer Haushalte (ca. 60 Prozent) erreicht heute die traditionelle Poststelle als ersten Postservice**. Dass diese vor allem in dichter besiedelten Regionen stehen dürften, wird dann klar, wenn man sich vor Augen führt, dass es heute - zusammengenommen - fast doppelt so viele Agenturen und Hausservices gibt wie traditionelle Poststellen (ca. 1200).
+
+<p align="center">
+<img src="https://github.com/gfzb/DiePost/blob/master/img/1_typ.png" width="600px" >
+</p>
+
+Die Anreisedauer ändert sich beim Zusammenführen aller drei Typen nur unwesentlich.
+
+<p align="center">
+<img src="https://github.com/gfzb/DiePost/blob/master/img/2_dauer.png" width="600px" >
+</p>
