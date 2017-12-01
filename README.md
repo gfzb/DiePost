@@ -9,7 +9,7 @@ Gemäss Art. 33 Abs. 4 der Postverordnung ([VPG](https://www.admin.ch/opc/de/cla
 Wir generieren auf Basis der Open-Data-Datensätze der Post eine **Distanz-Matrix zwischen möglichst repräsentativen Adressen von Schweizer Haushalten und den verschiedenen Postdienstleistungen**. Danach eruieren wir mit Hilfe der Distance Matrix API von Google Maps, **wie lange die Reise zu den nächstgelegenen Postangeboten** dauert.
 
 ## Vorgehen
-Der zur Analyse verwendete R-Code ist unter [post_erreichbarkeit.R](https://github.com/gfzb/DiePost/blob/master/post_erreichbarkeit.R) abgelegt. Das grobe Vorgehen ist hier skizziert.
+Der zur Analyse verwendete R-Code ist unter [post_erreichbarkeit.R](https://github.com/gfzb/DiePost/blob/master/post_erreichbarkeit.R) abgelegt. Das Vorgehen wird nachfolgend kurz skizziert.
 
 
 **A. Aufbereiten Geodaten der Schweizer Poststellen, Postagenturen und Hausservices**
@@ -59,10 +59,13 @@ Daraus ergibt sich folgendes Gesamtbild: **Eine Mehrheit der Schweizer Haushalte
 <img src="https://github.com/gfzb/DiePost/blob/master/img/1_typ.png" width="600px" >
 </p>
 
-Die Anreisedauer ändert sich beim Zusammenführen aller drei Typen nur unwesentlich. Nach wie vor fällt auf, dass zwar viele Haushalte sehr schnell beim nächsten Zugangspunkte sind, einige wenige jedoch sehr viel Zeit einrechnen dafür müssen. 
+Die Anreisedauer ändert sich beim Zusammenführen aller drei Typen nur unwesentlich. Nach wie vor fällt auf, dass zwar viele Haushalte sehr schnell eine postalischen Zugangspunkt erreichen, einige wenige jedoch sehr viel Zeit dafür einrechnen müssen. 
 
 <p align="center">
 <img src="https://github.com/gfzb/DiePost/blob/master/img/2_dauer.png" width="600px" >
 </p>
 
-Erste Indizien 
+Eine Aufschlüsselung der Anreisezeiten nach Kantonen, die aufgrund der teils tiefen Fallzahlen mit Vorsicht zu geniessen ist, gibt der Vermutung weiter Auftrieb, dass regional erhebliche Unterschiede bestehen. Für politischen Zündstoff ist gesorgt. ;-)  
+<p align="center">
+<img src="https://github.com/gfzb/DiePost/blob/master/img/6_kantone.png" width="600px" >
+</p>
