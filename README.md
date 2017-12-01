@@ -56,7 +56,7 @@ Daraus ergibt sich folgendes Gesamtbild: **Eine Mehrheit der Schweizer Haushalte
 <img src="https://github.com/gfzb/DiePost/blob/master/img/1_typ.png" width="600px" >
 </p>
 
-Die Anreisedauer ändert sich beim Zusammenführen aller drei Typen nur unwesentlich.
+Die Anreisedauer ändert sich beim Zusammenführen aller drei Typen nur unwesentlich. Nach wie vor fällt auf, dass zwar viele Haushalte sehr schnell bei einer Poststelle sind, einige wenige jedoch sehr viel Zeit einrechnen müssen. 
 
 <p align="center">
 <img src="https://github.com/gfzb/DiePost/blob/master/img/2_dauer.png" width="600px" >
