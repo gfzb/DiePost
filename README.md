@@ -5,6 +5,9 @@ Gemäss Art. 33 Abs. 4 der Postverordnung ([VPG](https://www.admin.ch/opc/de/cla
 
 **Erfüllt das heutige Poststellennetz diese Anforderungen?** – Dieser Frage sind wir mit einem datengetriebenen Ansatz und viel *Open Data* nachgegangen.
 
+## Idee
+Wir generieren auf Basis der Open-Data-Datensätze der Post eine **Distanz-Matrix zwischen möglichst repräsentativen Adressen von Schweizer Haushalten und den verschiedenen Postdienstleistungen**. Danach eruieren wir mit Hilfe der **Distance Matrix API von Google Maps**, wie lange die Reise zu den nächstgelegenen Postangeboten dauert.
+
 ## Vorgehen
 Der zur Analyse verwendete R-Code ist unter [post_erreichbarkeit.R](https://github.com/gfzb/DiePost/blob/master/post_erreichbarkeit.R) abgelegt. Das grobe Vorgehen ist hier skizziert.
 
