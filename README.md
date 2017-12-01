@@ -1,10 +1,12 @@
+<a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/ch/"><img alt="Creative Commons Lizenzvertrag" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/3.0/ch/88x31.png" /></a><br/>
+
 # Eine Analyse des Schweizer Poststellennetzes
 Gemäss Art. 33 Abs. 4 der Postverordnung ([VPG](https://www.admin.ch/opc/de/classified-compilation/20112357/index.html#a36)) muss die Post *"...gewährleisten, dass 90 Prozent der ständigen Wohnbevölkerung zu Fuss oder mit öffentlichen Verkehrsmitteln eine Poststelle oder Postagentur innerhalb von 20 Minuten erreichen können. Bietet die Post einen Hausservice an, so gelten für die betroffenen Haushalte 30 Minuten.*" 
 
 **Erfüllt das heutige Poststellennetz diese Anforderungen?** – Dieser Frage sind wir mit einem datengetriebenen Ansatz und viel *Open Data* nachgegangen.
 
 ## Vorgehen
-Der zur Analyse verwendete R-Code ist unter [post_erreichbarkeit.R](https://github.com/gfzb/DiePost/blob/master/post_erreichbarkeit.R) abgelegt. Das Vorgehen wird nachfolgend kurz skizziert.
+Der zur Analyse verwendete R-Code ist unter [post_erreichbarkeit.R](https://github.com/gfzb/DiePost/blob/master/post_erreichbarkeit.R) abgelegt. Das grobe Vorgehen wird nachfolgend kurz skizziert.
 
 
 **A. Aufbereiten Geodaten der Schweizer Poststellen, Postagenturen und Hausservices**
