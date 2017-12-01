@@ -6,7 +6,7 @@ Gemäss Art. 33 Abs. 4 der Postverordnung ([VPG](https://www.admin.ch/opc/de/cla
 **Erfüllt das heutige Poststellennetz diese Anforderungen?** – Dieser Frage sind wir mit einem datengetriebenen Ansatz und viel *Open Data* nachgegangen.
 
 ## Vorgehen
-Der zur Analyse verwendete R-Code ist unter [post_erreichbarkeit.R](https://github.com/gfzb/DiePost/blob/master/post_erreichbarkeit.R) abgelegt. Das grobe Vorgehen wird nachfolgend kurz skizziert.
+Der zur Analyse verwendete R-Code ist unter [post_erreichbarkeit.R](https://github.com/gfzb/DiePost/blob/master/post_erreichbarkeit.R) abgelegt. Das grobe Vorgehen ist hier skizziert.
 
 
 **A. Aufbereiten Geodaten der Schweizer Poststellen, Postagenturen und Hausservices**
@@ -29,7 +29,7 @@ Datensatz: [Ständige Wohnbevölkerung der Schweizer Gemeinden](https://www.pxwe
 Link: [Google Maps Geocoding API](https://developers.google.com/maps/documentation/geocoding/intro?hl=en)
 >Mit Hilfe der API von Google Maps werden alle Postadressen geocodiert (ca. 1,4 Prozent müssen von Hand nachcodiert werden). Da nun die Koordinaten von Start und Ziel bekannt sind, können die Distanzen zwischen allen Adressen und Postangeboten berechnet werden. Diese dienen jedoch nur der Vorselektion der für die Simulation der Reisezeiten relevanten Poststellen.
 
-**F. Eruieren der Wegzeit zwischen jeder Adresse und den fünf nächstgelegenen Postangeboten**
+**E. Eruieren der Wegzeit zwischen jeder Adresse und den fünf nächstgelegenen Postangeboten**
 
 Link: [Google Maps Distance Matrix API](https://developers.google.com/maps/documentation/distance-matrix/intro?hl=en)
 >Für jede Adresse wird nun mit Hilfe der Distance Matrix API von Google Maps eruiert, wie lange man zu Fuss und mit dem öffentlichen Verkehr zu den fünf nächstgelegenen Postangeboten unterwegs ist. Für weitere Analysen werden zudem die Fahrzeiten mit Velo und Auto abgefragt. Die Reisezeiten wurden für Dienstag, den 05. Dezember 2018, um 9:30 Uhr 'simuliert'. Es werden die Standardeinstellungen der API verwendet.
