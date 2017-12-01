@@ -595,7 +595,7 @@ rm(list = setdiff(ls(), c("addresses", "all", "distances")))
 
 # Prepare DataViz ----------------------------------------------------------------------------------------
 
-# Install awtools to use its wonderfull theme_a (https://github.com/awhstin/awtools)
+# Install awtools to use its wonderful theme_a (https://github.com/awhstin/awtools)
 devtools::install_github('awhstin/awtools')
 library(awtools)
 
@@ -624,7 +624,7 @@ addresses %>%
   labs(
     title = "Das Schweizer Postnetz – Welchen\nPostservice erreichen die Haushalte\nheute am schnellsten?",
     subtitle = "Zufallsstichprobe: 2'500 Schweizer Postadressen\nWegzeiten simuliert für Dienstag, den 5. Dezember 2017, um 9:30 Uhr.",
-    x = "Wegzeit (hh:mm:ss)",
+    x = "",
     y = "",
     caption = "Daten: Open Data Portal of Swiss Post | Wegzeiten: Google Maps Distance Matrix API"
   )
