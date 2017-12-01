@@ -27,6 +27,6 @@ Link: [Google Maps Geocoding API](https://developers.google.com/maps/documentati
 **F. Eruieren der Wegzeit zwischen jeder Adresse und den fünf nächstgelegenen Postangeboten**
 
 Link: [Google Maps Distance Matrix API](https://developers.google.com/maps/documentation/distance-matrix/intro?hl=en)
->Für jede Adresse wird nun mit Hilfe der Distance Matrix API von Google Maps eruiert, wie lange man zu Fuss und mit dem öffentlichen Verkehr zu den fünf nächstgelegenen Postangeboten unterwegs ist. Für weitere Analysen werden zudem die Fahrzeiten mit Velo und Auto abgefragt. Die Reisezeiten wurden für Dienstag, den 05. Dezember 2018, um 9:30 Uhr 'simuliert'. Es wurden die Standardeinstellungen der API verwendet.
+>Für jede Adresse wird nun mit Hilfe der Distance Matrix API von Google Maps eruiert, wie lange man zu Fuss und mit dem öffentlichen Verkehr zu den fünf nächstgelegenen Postangeboten unterwegs ist. Für weitere Analysen werden zudem die Fahrzeiten mit Velo und Auto abgefragt. Die Reisezeiten wurden für Dienstag, den 05. Dezember 2018, um 9:30 Uhr 'simuliert'. Es werden die Standardeinstellungen der API verwendet.
 
-**G. Auswerten der Daten**
+## Resultate
