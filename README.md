@@ -39,7 +39,7 @@ Link: [Google Maps Distance Matrix API](https://developers.google.com/maps/docum
 
 ## Resultate
 ### Erreichbarkeit von Poststellen und Postagenturen
-Die grafische Aufbereitung und Auswertung der Daten lässt vermuten, dass die Post heute ihre bundesrätlichen Erreichbarkeitsvorgaben weitgehend erfüllt. So erreichen gut 90 Prozent der ständigen Wohnbevölkerung zu Fuss oder mit öffentlichen Verkehrsmitteln eine Poststelle oder Postagentur in mindestens **20 Minuten**. Rund die Hälfte der Schweizer Haushalte tut dies **in weniger als elf Minuten**. 
+Die grafische Aufbereitung und Auswertung der Daten lässt vermuten, **dass die Post heute ihre bundesrätlichen Erreichbarkeitsvorgaben erfüllt**. So erreichen gut 90 Prozent der ständigen Wohnbevölkerung zu Fuss oder mit öffentlichen Verkehrsmitteln eine Poststelle oder Postagentur in mindestens **20 Minuten**. Rund die Hälfte der Schweizer Haushalte schafft dies **in weniger als elf Minuten**. Die Eidgenössische Postkommission PostCom weist in ihrem [Jahresbericht 2016](https://www.postcom.admin.ch/inhalte/PDF/Jahresberichte/POC-01-2017_TB2016_DE_RZ.pdf) eine Erreichbarkeit (<= 20 Min.) von 94,3 Prozent aus. 
 
 <p align="center">
 <img src="https://github.com/gfzb/DiePost/blob/master/img/3_poststellen.png" width="600px" >
@@ -59,8 +59,10 @@ Daraus ergibt sich folgendes Gesamtbild: **Eine Mehrheit der Schweizer Haushalte
 <img src="https://github.com/gfzb/DiePost/blob/master/img/1_typ.png" width="600px" >
 </p>
 
-Die Anreisedauer ändert sich beim Zusammenführen aller drei Typen nur unwesentlich. Nach wie vor fällt auf, dass zwar viele Haushalte sehr schnell bei einer Poststelle sind, einige wenige jedoch sehr viel Zeit einrechnen müssen. 
+Die Anreisedauer ändert sich beim Zusammenführen aller drei Typen nur unwesentlich. Nach wie vor fällt auf, dass zwar viele Haushalte sehr schnell beim nächsten Zugangspunkte sind, einige wenige jedoch sehr viel Zeit einrechnen dafür müssen. 
 
 <p align="center">
 <img src="https://github.com/gfzb/DiePost/blob/master/img/2_dauer.png" width="600px" >
 </p>
+
+Erste Indizien 
