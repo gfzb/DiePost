@@ -4,6 +4,9 @@ Gemäss Art. 33 Abs. 4 der Postverordnung ([VPG](https://www.admin.ch/opc/de/cla
 **Erfüllt das heutige Poststellennetz diese Anforderungen?** – Dieser Frage sind wir mit einem datengetriebenen Ansatz nachgegangen.
 
 ## Vorgehen
+Der zur Analyse verwendete R-Code ist unter [post_erreichbarkeit.R](https://github.com/gfzb/DiePost/blob/master/post_erreichbarkeit.R) abgelegt. Das Vorgehen wird nachfolgend kurz skizziert.
+
+
 **A. Aufbereiten Geodaten der Schweizer Poststellen, Postagenturen und Hausservices**
 
 Datensatz: [Zugangspunkte Post](https://swisspost.opendatasoft.com/explore/dataset/zugangspunkte-post/) aus dem [Open Data Portal](https://swisspost.opendatasoft.com/pages/home/) der Post
