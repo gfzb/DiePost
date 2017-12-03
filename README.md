@@ -3,7 +3,7 @@
 # Eine Analyse des Schweizer Poststellennetzes
 Gemäss Art. 33 Abs. 4 der Postverordnung ([VPG](https://www.admin.ch/opc/de/classified-compilation/20112357/index.html#a36)) muss die Post *"...gewährleisten, dass 90 Prozent der ständigen Wohnbevölkerung zu Fuss oder mit öffentlichen Verkehrsmitteln eine Poststelle oder Postagentur innerhalb von 20 Minuten erreichen können. Bietet die Post einen Hausservice an, so gelten für die betroffenen Haushalte 30 Minuten.*" 
 
-**Erfüllt das heutige Poststellennetz diese Anforderungen?** – Dieser Frage sind wir anlässlich unseres firmeninternen Open-Data-Hackdays mit einem datengetriebenen Ansatz und viel *Open Data* nachgegangen.
+**Erfüllt das heutige Poststellennetz diese Anforderungen?** – Dieser Frage sind wir anlässlich unseres [firmeninternen Open-Data-Hackdays](https://www.gfzb.ch/) mit einem datengetriebenen Ansatz und viel *Open Data* nachgegangen.
 
 ## Idee
 Wir generieren auf Basis der Open-Data-Datensätze der Post eine **Distanz-Matrix zwischen möglichst repräsentativen Adressen von Schweizer Haushalten und den verschiedenen Postdienstleistungen**. Danach eruieren wir mit Hilfe der Distance Matrix API von Google Maps, **wie lange die Reise zu den nächstgelegenen Postangeboten** dauert.
