@@ -3,7 +3,7 @@
 # Eine Analyse des Schweizer Poststellennetzes
 Gemäss Art. 33 Abs. 4 der Postverordnung ([VPG](https://www.admin.ch/opc/de/classified-compilation/20112357/index.html#a36)) muss die Post *"...gewährleisten, dass 90 Prozent der ständigen Wohnbevölkerung zu Fuss oder mit öffentlichen Verkehrsmitteln eine Poststelle oder Postagentur innerhalb von 20 Minuten erreichen können. Bietet die Post einen Hausservice an, so gelten für die betroffenen Haushalte 30 Minuten.*" 
 
-**Erfüllt das heutige Poststellennetz diese Anforderungen?** – Dieser Frage sind wir mit einem datengetriebenen Ansatz und viel *Open Data* nachgegangen.
+**Erfüllt das heutige Poststellennetz diese Anforderungen?** – Dieser Frage sind wir anlässlich unseres firmeninternen Open-Data-Hackdays mit einem datengetriebenen Ansatz und viel *Open Data* nachgegangen.
 
 ## Idee
 Wir generieren auf Basis der Open-Data-Datensätze der Post eine **Distanz-Matrix zwischen möglichst repräsentativen Adressen von Schweizer Haushalten und den verschiedenen Postdienstleistungen**. Danach eruieren wir mit Hilfe der Distance Matrix API von Google Maps, **wie lange die Reise zu den nächstgelegenen Postangeboten** dauert.
@@ -30,16 +30,18 @@ Datensatz: [Ständige Wohnbevölkerung der Schweizer Gemeinden](https://www.pxwe
 **D. Berechnen der Entfernungen zwischen sämtlichen Adressen und Postangeboten**
 
 Link: [Google Maps Geocoding API](https://developers.google.com/maps/documentation/geocoding/intro?hl=en)
->Mit Hilfe der API von Google Maps werden alle Postadressen geocodiert (ca. 1,4 Prozent müssen von Hand nachcodiert werden). Da nun die Koordinaten von Start und Ziel bekannt sind, können die Distanzen zwischen allen Adressen und Postangeboten berechnet werden. Diese dienen jedoch nur der Vorselektion der für die Simulation der Reisezeiten relevanten Poststellen.
+>Mit Hilfe der API von Google Maps werden alle Postadressen geocodiert ([2'500 Abfragen/Tag sind kostenlos](https://developers.google.com/maps/pricing-and-plans/#details), ca. 1,4 Prozent müssen von Hand nachcodiert werden, ). Da nun die Koordinaten von Start und Ziel bekannt sind, können die Distanzen zwischen allen Adressen und Postangeboten berechnet werden. Diese dienen jedoch nur der Vorselektion der für die Simulation der Reisezeiten relevanten Poststellen.
 
 **E. Eruieren der Wegzeit zwischen jeder Adresse und den fünf nächstgelegenen Postangeboten**
 
 Link: [Google Maps Distance Matrix API](https://developers.google.com/maps/documentation/distance-matrix/intro?hl=en)
->Für jede Adresse wird nun mit Hilfe der Distance Matrix API von Google Maps eruiert, wie lange man zu Fuss und mit dem öffentlichen Verkehr zu den fünf nächstgelegenen Postangeboten unterwegs ist. Für weitere Analysen werden zudem die Fahrzeiten mit Velo und Auto abgefragt. Die Reisezeiten wurden für Dienstag, den 05. Dezember 2018, um 9:30 Uhr 'simuliert'. Es werden die Standardeinstellungen der API verwendet.
+>Für jede Adresse wird nun mit Hilfe der Distance Matrix API von Google Maps eruiert, wie lange man zu Fuss und mit dem öffentlichen Verkehr zu den fünf nächstgelegenen Postangeboten unterwegs ist. Für weitere Analysen werden zudem die Fahrzeiten mit Velo und Auto abgefragt. Die Reisezeiten wurden für Dienstag, den 05. Dezember 2018, um 9:30 Uhr 'simuliert'. Es werden die Standardeinstellungen der API verwendet. Die getätigte Abfrage (ca. 50'000 Anforderungen) kostet bei den aktuellen [API-Preisen von Google](https://developers.google.com/maps/pricing-and-plans/#details) rund 25 Franken.
 
 ## Resultate
 ### Erreichbarkeit von Poststellen und Postagenturen
-Die grafische Aufbereitung und Auswertung der Daten lässt vermuten, **dass die Post heute ihre bundesrätlichen Erreichbarkeitsvorgaben erfüllt**. So erreichen gut 90 Prozent der ständigen Wohnbevölkerung zu Fuss oder mit öffentlichen Verkehrsmitteln eine Poststelle oder Postagentur in mindestens **20 Minuten**. Rund die Hälfte der Schweizer Haushalte schafft dies **in weniger als elf Minuten**. Die Eidgenössische Postkommission PostCom weist in ihrem [Jahresbericht 2016](https://www.postcom.admin.ch/inhalte/PDF/Jahresberichte/POC-01-2017_TB2016_DE_RZ.pdf) eine Erreichbarkeit (<= 20 Min.) von 94,3 Prozent aus. 
+Die grafische Aufbereitung und Auswertung der Daten lässt vermuten, **dass die Post heute ihre bundesrätlichen Erreichbarkeitsvorgaben erfüllt**. So erreichen gut 90 Prozent der ständigen Wohnbevölkerung zu Fuss oder mit öffentlichen Verkehrsmitteln eine Poststelle oder Postagentur in mindestens **20 Minuten**. Rund die Hälfte der Schweizer Haushalte schafft dies **in weniger als elf Minuten**. 
+
+Die Eidgenössische Postkommission PostCom weist in ihrem [Jahresbericht 2016](https://www.postcom.admin.ch/inhalte/PDF/Jahresberichte/POC-01-2017_TB2016_DE_RZ.pdf) eine Erreichbarkeit (<= 20 Min.) von 94,3 Prozent aus. Die Differenz dürfte in erster Linie mit den Unterschieden bei der *Fallauswahl* (Vollerhebung vs. Sample), der *Gewichtung der Adressen* (wahrscheinlich Adress- bzw. Individualebene vs. Gemeindeebene) und der gewählten *Quelle zur Bestimmung der Reisezeiten* (Verbindundsauskunft SBB vs. Distance Matrix API von Google Maps) zu erklären sein.
 
 <p align="center">
 <img src="https://github.com/gfzb/DiePost/blob/master/img/3_poststellen.png" width="600px" >
@@ -65,7 +67,7 @@ Die Anreisedauer ändert sich beim Zusammenführen aller drei Typen nur unwesent
 <img src="https://github.com/gfzb/DiePost/blob/master/img/2_dauer.png" width="600px" >
 </p>
 
-Eine Aufschlüsselung der Anreisezeiten nach Kantonen, die aufgrund der teils tiefen Fallzahlen mit Vorsicht zu geniessen ist, gibt der Vermutung weiter Auftrieb, dass regional erhebliche Unterschiede bestehen. Für politischen Zündstoff ist gesorgt. ;-)  
+Eine Aufschlüsselung der Anreisezeiten nach Kantonen, die aufgrund der teils tiefen Fallzahlen mit Vorsicht zu geniessen ist, gibt der Vermutung weiter Auftrieb, dass regional erhebliche Unterschiede bestehen. Für politischen Zündstoff ist gesorgt. Wer seinen Kanton genauer untersucht haben möchen, darf sich gerne melden. ;-)
 <p align="center">
 <img src="https://github.com/gfzb/DiePost/blob/master/img/6_kantone.png" width="600px" >
 </p>
