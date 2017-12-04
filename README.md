@@ -39,7 +39,7 @@ Link: [Google Maps Distance Matrix API](https://developers.google.com/maps/docum
 
 ## Resultate
 ### Erreichbarkeit von Poststellen und Postagenturen
-Die grafische Aufbereitung und Auswertung der Daten lässt vermuten, **dass die Post heute ihre bundesrätlichen Erreichbarkeitsvorgaben erfüllt**. So erreichen gut 90 Prozent der ständigen Wohnbevölkerung zu Fuss oder mit öffentlichen Verkehrsmitteln eine Poststelle oder Postagentur in mindestens **20 Minuten**. Rund die Hälfte der Schweizer Haushalte schafft dies **in weniger als elf Minuten**. 
+Die grafische Aufbereitung und Auswertung der Daten lässt vermuten, **dass die Post heute ihre bundesrätlichen Erreichbarkeitsvorgaben erfüllt**. So erreichen gut 90,6 Prozent der ständigen Wohnbevölkerung zu Fuss oder mit öffentlichen Verkehrsmitteln eine Poststelle oder Postagentur in mindestens **20 Minuten**. Rund die Hälfte der Schweizer Haushalte schafft dies **in weniger als elf Minuten**. 
 
 Die **Eidgenössische Postkommission PostCom** weist in ihrem [Jahresbericht 2016](https://www.postcom.admin.ch/inhalte/PDF/Jahresberichte/POC-01-2017_TB2016_DE_RZ.pdf) eine Erreichbarkeit (<= 20 Min.) von **94,3 Prozent** aus. Die Differenz dürfte in erster Linie mit den Unterschieden bei der *Fallauswahl* (Vollerhebung vs. Sample), der *Gewichtung der Adressen* (wahrscheinlich Adress- bzw. Individualebene vs. Gemeindeebene), der gewählten *Quelle zur Bestimmung der Reisezeiten* (Verbindungsauskunft SBB vs. Distance Matrix API von Google Maps) und der von uns gewählten *Methode zur Eruierung der nächstgelegenen Postdienstleistung* (Räumliche Nähe ist nicht in allen Fällen mit kurzer Reisezeit assoziiert) zu erklären sein.
 
@@ -48,7 +48,7 @@ Die **Eidgenössische Postkommission PostCom** weist in ihrem [Jahresbericht 201
 </p>
 
 ### Erreichbarkeit des Hausservice
-Ähnlich verhält es sich bei der Erreichbarkeit des Hausservice. Unsere Zahlen deuten daraufhin, dass 90 Prozent aller Haushalte, die näher an einem Hausservice als einer Poststelle bzw. Postagentur wohnen, diesen in **unter 28 Minuten** erreichen.
+Ähnlich verhält es sich bei der Erreichbarkeit des Hausservice. Unsere Zahlen deuten daraufhin, dass rund **93,3 Prozent** aller Haushalte, die näher an einem Hausservice als einer Poststelle bzw. Postagentur wohnen, diesen in **unter 30 Minuten** erreichen.
 
 <p align="center">
 <img src="https://github.com/gfzb/DiePost/blob/master/img/4_hausservice.png" width="600px" >
@@ -68,6 +68,7 @@ Die Anreisedauer ändert sich beim Zusammenführen aller drei Typen nur unwesent
 </p>
 
 Eine Aufschlüsselung der Anreisezeiten nach Kantonen, die aufgrund der teils tiefen Fallzahlen mit Vorsicht zu geniessen ist, gibt der Vermutung weiter Auftrieb, dass regional erhebliche Unterschiede bestehen. Für politischen Zündstoff ist gesorgt. Wer seinen Kanton genauer untersucht haben möchen, darf sich gerne melden. ;-)
+
 <p align="center">
 <img src="https://github.com/gfzb/DiePost/blob/master/img/6_kantone.png" width="600px" >
 </p>
