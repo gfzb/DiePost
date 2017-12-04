@@ -72,3 +72,9 @@ Eine Aufschlüsselung der Anreisezeiten nach Kantonen, die aufgrund der teils ti
 <p align="center">
 <img src="https://github.com/gfzb/DiePost/blob/master/img/6_kantone.png" width="600px" >
 </p>
+
+Und zuguterletzt noch der angekündigte Vergleich der Transportarten, wobei nur traditionelle Poststellen als Zielorte in Frage kommen.  
+
+<p align="center">
+<img src="https://github.com/gfzb/DiePost/blob/master/img/7_transportart.png" width="600px" >
+</p>
